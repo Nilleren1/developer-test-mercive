@@ -37,7 +37,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -46,6 +46,7 @@ footer {
 .crypto-header {
     color: #55C1E2;
     font-size: 1.1em;
+    text-align: left;
 }
 
 table,
@@ -54,6 +55,7 @@ td {
     border: 1px solid grey;
     border-collapse: collapse;
     padding: 5px 15px;
+    font-size: 1rem;
 }
 
 .coin-info {
@@ -106,3 +108,27 @@ td {
     background-color:#5C0C1D;
     padding: 3px 3px 0 5px;
 }
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 90%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.pagination button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
