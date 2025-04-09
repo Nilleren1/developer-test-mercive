@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <!-- Link to the CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <header>
@@ -16,6 +18,23 @@
 
     <main>
         <!-- Add your HTML content here -->
+        <h1 style="margin-bottom: 20px;">Crypto Prices</h1>
+        <table id="crypto-table">
+            <thead>
+                <tr class="crypto-header">
+                    <th>Coin</th>
+                    <th>Price (USD)</th>
+                    <th>Market Cap (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="pagination">
+        <button id="back-btn" disabled>BACK</button>
+        <button id="next-btn">NEXT</button>
+        </div>
     </main>
 
     <footer>
@@ -25,4 +44,5 @@
     <!-- Link to the JavaScript file -->
     <script src="script.js"></script>
 </body>
+
 </html>

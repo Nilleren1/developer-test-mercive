@@ -8,8 +8,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: black;
+    color: white;
 }
 
 /* Basic layout styles */
@@ -26,6 +26,8 @@ header h1 {
 
 main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: 40px 0;
 }
@@ -41,3 +43,66 @@ footer {
 }
 
 /* Add your CSS below here */
+.crypto-header {
+    color: #55C1E2;
+    font-size: 1.1em;
+}
+
+table,
+th,
+td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px 15px;
+}
+
+.coin-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .coin-image {
+    height: 40px;
+    width: auto;
+  }
+  
+  .coin-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .coin-symbol {
+    font-weight: bold;
+  }
+  
+  .coin-name {
+    font-size: 0.9em;
+    color: #aaa;
+  }
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-change {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.high {
+    color: #93F20D;
+    background-color: #203309;
+    padding: 3px 5px 0 3px;
+}
+
+.low {
+    color: #F55757;
+    background-color:#5C0C1D;
+    padding: 3px 3px 0 5px;
+}
